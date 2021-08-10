@@ -30,6 +30,8 @@ void MainWindow::on_pushButton_clicked()
        connect(mgr,SIGNAL(finished(QNetworkReply*)),this,SLOT(downloadfinished(QNetworkReply*)));
        connect(mgr,SIGNAL(finished(QNetworkReply*)),mgr,SLOT(deleteLater()));
 
-       mgr->get(QNetworkRequest(QUrl("https://api.openweathermap.org/data/2.5/weather?q=london")));
+       mgr->get(QNetworkRequest(QUrl("https://api.openweathermap.org/data/2.5/weather?q=ankara&appid=95edf34d0dd7709f36b7ac7f67cf2399")));
+
+
 }
 
